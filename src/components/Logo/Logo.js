@@ -2,7 +2,6 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { closePopups } from "../../store/appSlice";
-import Button from "../Button/Button";
 
 import "./Logo.sass";
 
