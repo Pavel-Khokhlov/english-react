@@ -1,0 +1,29 @@
+$font-family: Fira Sans Extra Condensed
+  
+@mixin text_reset
+  padding: 0
+  margin: 0
+
+.title
+  @include text_reset
+  &__main
+    text-align: center
+    letter-spacing: 6px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 2
+    color: $notification-color
+  &__menu
+    margin: 20px 0 50px
+
+.subtitle
+  @include text_reset
+  &__link
+    letter-spacing: 3px
+    line-height: 40px
+    text-decoration: none
+    color: $primary-black
+    &_active
+      font-weight: bold
+
+  
