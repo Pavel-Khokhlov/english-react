@@ -17,7 +17,13 @@ function Navigation({ location }) {
     <nav className={navClass}>
       {links.map((link, i) => {
         return (
-          <NavLink key={i} to={link.path} className={navLinkClass} activeclassname="active" onClick={handleClick}>
+          <NavLink
+            key={i}
+            to={link.path}
+            className={navLinkClass}
+            activeclassname="active"
+            onClick={handleClick}
+          >
             {link.name}
           </NavLink>
         );

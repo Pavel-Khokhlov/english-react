@@ -5,8 +5,10 @@ import "./Footer.sass";
 function Footer() {
   return (
     <footer className="footer">
-      <nav>FOOTER</nav>
-      <p>@ Copy by Eugenia Ivanova</p>
+      <section className="footer__body">
+        <nav>FOOTER</nav>
+        <p className="footer__paragraph">@ Copy by Eugenia Ivanova</p>
+      </section>
     </footer>
   );
 }

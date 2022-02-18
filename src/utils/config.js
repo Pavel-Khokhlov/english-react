@@ -1,6 +1,7 @@
 export const links = [
-  {path: "/", name: "Главная"},
-  {path: "/achive", name: "Достижения"},
+  {path: "/", name: "Обо мне"},
+  {path: "/achivements", name: "Достижения учеников"},
+  {path: "/price", name: "Стоимость занятий"},
   {path: "/contacts", name: "Контакты"},
 ]
 

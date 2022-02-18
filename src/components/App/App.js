@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import PopupMenu from "../PopupMenu/PopupMenu";
+import Price from "../Price/Price";
 import "./App.sass";
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       <main className="main">
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/achive" element={<Achive />} />
+          <Route path="/achivements" element={<Achive />} />
+          <Route path="/price" element={<Price />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
       </main>

@@ -1,12 +1,14 @@
 @import ../../sass/index
 
 .header
+  display: grid
+  place-content: center
   width: 100vw
-  height: MIN(80px, 20vw)
+  height: MIN(80px, 15vw)
   z-index: 5
   &__body
     margin: 0 auto
-    width: MIN(1280px, 96vw)
+    width: $app-width
     display: flex
     justify-content: space-between
     align-items: center

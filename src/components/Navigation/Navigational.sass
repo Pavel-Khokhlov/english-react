@@ -9,15 +9,19 @@
   &__link
     text-decoration: none
     &_header
-      font-size: 20px
+      font-size: 22px
+      font-weight: 400
       color: $secondary-color
-      &.active
-        color: $notification-color
+      transition: $app-transition
+      &.active, &:hover
+        color: $third-color
     &_menu
-      font-size: 40px
-      color: $notification-color
-      &.active
-        color: $secondary-color
+      font-size: 30px
+      font-weight: 400
+      color: $secondary-color
+      transition: $app-transition
+      &.active, &:hover
+        color: $third-color
   &__menu
     display: flex
     flex-direction: column
