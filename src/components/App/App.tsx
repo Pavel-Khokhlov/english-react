@@ -1,13 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Achive from "../Achive/Achive";
-import Contacts from "../Contacts/Contacts";
+import Achive from "../Pages/Achive/Achive";
+import Contacts from "../Pages/Contacts/Contacts";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import Main from "../Main/Main";
-import Price from "../Price/Price";
+import Main from "../Pages/Main/Main";
+import Price from "../Pages/Price/Price";
 
 import "./App.sass";
+import Feedbacks from "../Pages/Feedbacks/Feedbacks";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/achivements" element={<Achive />} />
           <Route path="/price" element={<Price />} />
+          <Route path="/feedbacks" element={<Feedbacks />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
       </main>

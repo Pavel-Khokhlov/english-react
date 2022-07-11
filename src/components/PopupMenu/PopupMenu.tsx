@@ -9,7 +9,7 @@ interface IPopupMenu {
 }
 
 function PopupMenu({isOpen, onClose}: IPopupMenu) {
-  const popupClass = `popup popup__menu${isOpen ? " active" : ""}`;
+  const popupClass = `popup popup__menu ${isOpen ? "active" : ""}`;
 
   return (
     <section className={popupClass}>
