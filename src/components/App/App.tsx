@@ -5,8 +5,8 @@ import Contacts from "../Contacts/Contacts";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
-import PopupMenu from "../PopupMenu/PopupMenu";
 import Price from "../Price/Price";
+
 import "./App.sass";
 
 function App() {
@@ -22,7 +22,6 @@ function App() {
         </Routes>
       </main>
       <Footer />
-      <PopupMenu />
     </>
   );
 }

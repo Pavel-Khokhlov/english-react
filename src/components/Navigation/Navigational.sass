@@ -6,24 +6,43 @@
     display: none
     @media screen and (min-width: $phone)
       display: flex
-  &__link
-    text-decoration: none
-    &_header
-      font-size: 22px
-      font-weight: 400
-      color: $secondary-color
-      transition: $app-transition
-      &.active, &:hover
-        color: $third-color
-    &_menu
-      font-size: 30px
-      font-weight: 400
-      color: $secondary-color
-      transition: $app-transition
-      &.active, &:hover
-        color: $third-color
   &__menu
     display: flex
     flex-direction: column
     align-items: center
     gap: 30px
+  &__footer
+    display: flex
+    justify-content: center
+    gap: 30px
+    margin-bottom: 20px 
+    @media screen and (max-width: $phone)
+      flex-direction: column
+      align-items: center
+      gap: 10px
+  &__link
+    text-decoration: none
+    -webkit-tap-highlight-color: transparent
+    &_header
+      font-size: 1.4rem
+      font-weight: 500
+      color: $secondary-color
+      transition: $app-transition
+      &.active, &:hover
+        color: $third-color
+    &_menu
+      font-size: 1.8rem
+      font-weight: 500
+      color: $secondary-color
+      transition: $app-transition
+      &.active, &:hover
+        color: $third-color
+    &_footer
+      font-size: 1rem
+      font-weight: 500
+      color: $primary-black
+      opacity: 0.4
+      transition: $app-transition
+      &.active, &:hover
+        opacity: 1
+  
