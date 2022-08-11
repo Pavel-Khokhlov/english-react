@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/english-react/static/css/main.566e4308.css",
-    "main.js": "/english-react/static/js/main.b381bd33.js",
+    "main.css": "/english-react/static/css/main.40880a29.css",
+    "main.js": "/english-react/static/js/main.0d3bbdf8.js",
+    "static/media/Splash-Regular.ttf": "/english-react/static/media/Splash-Regular.9313a8c93be64cb7914c.ttf",
+    "static/media/Festive-Regular.ttf": "/english-react/static/media/Festive-Regular.c49acafb1c564d16d27a.ttf",
+    "static/media/Praise-Regular.ttf": "/english-react/static/media/Praise-Regular.c250c7167439a804dda6.ttf",
     "index.html": "/english-react/index.html",
-    "main.566e4308.css.map": "/english-react/static/css/main.566e4308.css.map",
-    "main.b381bd33.js.map": "/english-react/static/js/main.b381bd33.js.map"
+    "main.40880a29.css.map": "/english-react/static/css/main.40880a29.css.map",
+    "main.0d3bbdf8.js.map": "/english-react/static/js/main.0d3bbdf8.js.map"
   },
   "entrypoints": [
-    "static/css/main.566e4308.css",
-    "static/js/main.b381bd33.js"
+    "static/css/main.40880a29.css",
+    "static/js/main.0d3bbdf8.js"
   ]
 }
