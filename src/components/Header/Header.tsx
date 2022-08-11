@@ -9,7 +9,6 @@ import "./Header.sass";
 function Header() {
   const [isMenuPopupOpen, setIsMenuPopupOpen] = useState<boolean>(false);
   const [position, setPosition] = useState(0);
-  const buttonClass = `button button__menu ${isMenuPopupOpen ? "active" : ""}`;
 
   const handleMenuClick = () => {
     isMenuPopupOpen ? setIsMenuPopupOpen(false) : setIsMenuPopupOpen(true);
@@ -35,14 +34,13 @@ function Header() {
       <header className="header">
         <div className="header__body">
           <Logo onClose={handleMenuClose} />
-          <Navigation location="header" onClose={handleMenuClose} />
+          <Navigation location="header" />
           <Button
+            isOpen={isMenuPopupOpen}
             type="button"
-            className={buttonClass}
+            menu
             onClick={handleMenuClick}
-          >
-            <span className="button__menu_span"></span>
-          </Button>
+          />
         </div>
       </header>
       <PopupMenu isOpen={isMenuPopupOpen} onClose={handleMenuClose} />

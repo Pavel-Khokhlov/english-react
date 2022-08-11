@@ -1,11 +1,11 @@
-import React from "react";
+import React, { MouseEventHandler } from "react";
 import Navigation from "../Navigation/Navigation";
 
 import "./PopupMenu.sass";
 
 interface IPopupMenu {
   isOpen: boolean;
-  onClose?: () => void;
+  onClose?: MouseEventHandler<HTMLAnchorElement>;
 }
 
 function PopupMenu({isOpen, onClose}: IPopupMenu) {

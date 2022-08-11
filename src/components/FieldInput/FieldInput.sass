@@ -1,0 +1,52 @@
+@import ../../sass/index
+
+.input
+  position: relative
+  width: 100%
+  &__label
+    margin: 0 0 5px
+    color: $disabled-color
+    font-size: 16px
+    font-weight: 700
+    letter-spacing: 2px
+    transition: $app-transition
+    &.active
+      color: $notification-color
+  &__field
+    box-sizing: border-box
+    width: 100%
+    background: $primary-white
+    border: none
+    border-radius: 5px
+    outline: none
+    &_textarea
+      height: 100px
+      font-size: 18px
+      font-weight: 400
+      line-height: 22px
+      padding: 5px 10px
+      resize: none
+    &_other
+      height: 40px
+      font-size: 20px
+      font-weight: 700
+      line-height: 40px
+      padding: 0 10px
+  &__border
+    width: 100%
+    position: relative
+    background: linear-gradient(to right, $disabled-color, $disabled-color)
+    padding: 1px
+    border-radius: 5px
+    transition: $app-transition
+    &_textarea
+      height: 100px
+    &_other
+      height: 40px
+    &.active
+      background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%)
+      box-shadow: 0.6px 0.6px 1.4px rgba(0, 0, 0, 0.04), 4px 4px 3px rgba(0, 0, 0, 0.08)
+  &__error
+    padding: 0
+    margin: 0 5px
+    color: red

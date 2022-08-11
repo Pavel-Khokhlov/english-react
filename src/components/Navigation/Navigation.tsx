@@ -1,12 +1,12 @@
-import React from "react";
+import React, { MouseEventHandler } from "react";
 import { NavLink } from "react-router-dom";
 import { links } from "../../utils/config";
 
-import "./Navigational.sass";
+import "./Navigation.sass";
 
 export interface INavigation {
   location: string;
-  onClose?: () => void;
+  onClose?: MouseEventHandler<HTMLAnchorElement>;
 }
 
 function Navigation({ location, onClose }: INavigation) {

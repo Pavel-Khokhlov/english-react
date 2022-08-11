@@ -1,0 +1,36 @@
+@import ../../sass/index
+
+.form
+  margin: 0 auto
+  width: min(400px, 90vw)
+  display: flex
+  flex-direction: column
+  gap: min(20px, 5vw)
+  &__subtitle
+    font-size: 20px
+    margin: 0
+    text-align: center
+  &__radio
+    display: flex
+    justify-content: center
+    gap: 20px
+  &__label
+    cursor: pointer
+    width: 40px
+    height: 40px
+    border: none
+    border-radius: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #DCD9D4
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%)
+    background-blend-mode: soft-light,screen
+    &.active
+      background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%)
+      background-color: transparent
+      background-blend-mode: normal
+  &__icon
+    width: 25px
+    height: 25px
+
