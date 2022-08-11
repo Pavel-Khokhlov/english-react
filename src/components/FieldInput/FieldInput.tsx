@@ -1,11 +1,25 @@
 import React, { useState } from "react";
+import Icons from "../../assets/icons/socials/index";
 
 import "./FieldInput.sass";
+
+interface Item {
+  [key: string]: string;
+}
+
+const inputIcons: Item = {
+  user: Icons.user_b,
+  telegram: Icons.telegram_b,
+  whatsapp: Icons.whatsapp_b,
+  phone: Icons.phone_b,
+  email: Icons.email_b,
+};
 
 interface IFieldInput {
   type: "text" | "textarea" | "email" | "number" | "password" | "search";
   label?: string;
   name?: string;
+  option?: string | "telegram" | "whatsapp" | "phone" | "email" | "user";
   value: string | undefined;
   error?: string;
   onChange: (e: any) => void;
@@ -16,6 +30,7 @@ function FieldInput({
   type,
   label,
   name,
+  option = "user",
   value,
   error,
   onChange,
@@ -51,6 +66,8 @@ function FieldInput({
     return borderClassName;
   };
 
+  const Icon = inputIcons[option];
+
   return (
     <div>
       <label className="input" htmlFor={name}>
@@ -64,19 +81,27 @@ function FieldInput({
               onChange={onChange}
               onFocus={toggleFocus}
               onBlur={toggleFocus}
-              value={value} />
-          ) : (
-            <input
-              type={type}
-              name={name}
               value={value}
-              disabled={disabled}
-              className={defineInputClass()}
-              onChange={onChange}
-              onFocus={toggleFocus}
-              onBlur={toggleFocus}
-              autoComplete="off"
             />
+          ) : (
+            <>
+              <input
+                type={type}
+                name={name}
+                value={value}
+                disabled={disabled}
+                className={defineInputClass()}
+                onChange={onChange}
+                onFocus={toggleFocus}
+                onBlur={toggleFocus}
+                autoComplete="off"
+              />
+              <img
+                src={Icon}
+                alt={`иконка ${option}`}
+                className="input__icon"
+              />
+            </>
           )}
         </div>
       </label>

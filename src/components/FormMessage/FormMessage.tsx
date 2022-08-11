@@ -1,4 +1,5 @@
 import React, { ChangeEvent, FormEvent, MouseEvent, MouseEventHandler, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 import Button from "../Button/Button";
 import FieldInput from "../FieldInput/FieldInput";
 
@@ -63,7 +64,7 @@ function FormMessage() {
       
         {Object.values(radioContacts).map((item: IRadioContacts, index: number) => {
           return (
-            <RenderItem key={index} item={item} active={radio} onClick={handleRadioClick} />
+            <RenderItem key={uuidv4()} item={item} active={radio} onClick={handleRadioClick} />
           )
         })}
       </section>
@@ -80,6 +81,7 @@ function FormMessage() {
         type="text"
         name="contact"
         label={contactLabel}
+        option={radio}
         value={value.contact}
         onChange={handleChange}
         error=""

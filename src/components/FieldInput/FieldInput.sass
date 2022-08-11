@@ -31,7 +31,7 @@
       font-size: 20px
       font-weight: 700
       line-height: 40px
-      padding: 0 10px
+      padding: 0 50px 0 10px
   &__border
     width: 100%
     position: relative
@@ -44,9 +44,17 @@
     &_other
       height: 40px
     &.active
-      background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%)
-      box-shadow: 0.6px 0.6px 1.4px rgba(0, 0, 0, 0.04), 4px 4px 3px rgba(0, 0, 0, 0.08)
+      background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%)
+      box-shadow: 0px 0.7px 1.3px rgba(0, 0, 0, 0.04), 0px 2.2px 4.5px rgba(0, 0, 0, 0.06), 0px 10px 20px rgba(0, 0, 0, 0.1)
   &__error
     padding: 0
     margin: 0 5px
     color: red
+  &__icon
+    width: 20px
+    height: 20px
+    position: absolute
+    top: 50%
+    right: 20px
+    transform: translate(0, -50%)
+    opacity: 0.7
