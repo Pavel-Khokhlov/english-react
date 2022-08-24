@@ -6,13 +6,14 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Main from "../Pages/Main/Main";
 import Price from "../Pages/Price/Price";
+import {RecoilRoot} from 'recoil';
 
 import "./App.sass";
 import Feedbacks from "../Pages/Feedbacks/Feedbacks";
 
 function App() {
   return (
-    <>
+    <RecoilRoot>
       <Header />
       <main className="main">
         <Routes>
@@ -24,7 +25,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-    </>
+    </RecoilRoot>
   );
 }
 

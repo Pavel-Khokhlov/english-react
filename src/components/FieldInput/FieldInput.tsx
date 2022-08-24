@@ -16,18 +16,18 @@ const inputIcons: Item = {
 };
 
 interface IFieldInput {
-  type: "text" | "textarea" | "email" | "number" | "password" | "search";
+  type?: "text" | "textarea" | "email" | "tel";
   label?: string;
   name?: string;
   option?: string | "telegram" | "whatsapp" | "phone" | "email" | "user";
-  value: string | undefined;
+  value?: string | null;
   error?: string;
   onChange: (e: any) => void;
   disabled?: boolean;
 }
 
 function FieldInput({
-  type,
+  type = "text",
   label,
   name,
   option = "user",
@@ -66,6 +66,14 @@ function FieldInput({
     return borderClassName;
   };
 
+  const defineInputMode = () => {
+    return option === "user"
+      ? "text"
+      : option === "telegram" || option === "email"
+      ? "email"
+      : "tel";
+  };
+
   const Icon = inputIcons[option];
 
   return (
@@ -77,24 +85,28 @@ function FieldInput({
             <textarea
               name={name}
               disabled={disabled}
+              inputMode="text"
               className={defineInputClass()}
               onChange={onChange}
               onFocus={toggleFocus}
               onBlur={toggleFocus}
-              value={value}
+              value={value || ''}
+              spellCheck="false"
             />
           ) : (
             <>
               <input
                 type={type}
                 name={name}
-                value={value}
+                value={value || ""}
+                inputMode={defineInputMode()}
                 disabled={disabled}
                 className={defineInputClass()}
                 onChange={onChange}
                 onFocus={toggleFocus}
                 onBlur={toggleFocus}
                 autoComplete="off"
+                spellCheck="false"
               />
               <img
                 src={Icon}

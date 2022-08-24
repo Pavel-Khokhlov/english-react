@@ -42,6 +42,9 @@ function Button({
     if (transparent) {
       buttonClassName += ` transparent`
     }
+    if (disabled) {
+      buttonClassName += ` disabled`
+    }
     return buttonClassName;
   }
   return (
