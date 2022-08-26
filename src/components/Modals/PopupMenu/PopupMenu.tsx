@@ -1,5 +1,5 @@
 import React, { MouseEventHandler } from "react";
-import Navigation from "../Navigation/Navigation";
+import Navigation from "../../Navigation/Navigation";
 
 import "./PopupMenu.sass";
 

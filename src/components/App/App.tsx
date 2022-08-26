@@ -10,6 +10,7 @@ import {RecoilRoot} from 'recoil';
 
 import "./App.sass";
 import Feedbacks from "../Pages/Feedbacks/Feedbacks";
+import PopupNotification from "../Modals/Notification/PopupNotification";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <PopupNotification />
     </RecoilRoot>
   );
 }

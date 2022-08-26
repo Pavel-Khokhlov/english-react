@@ -20,9 +20,16 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "outDir": "./dist",
-    "sourceMap": true
+    "sourceMap": true,
+    "paths": {
+      // "@/*" : ["./src/*"],
+      "app/*": ["./src/*"],
+      }
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
   ]
 }

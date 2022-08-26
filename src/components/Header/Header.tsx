@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
 import Navigation from "../Navigation/Navigation";
-import PopupMenu from "../PopupMenu/PopupMenu";
+import PopupMenu from "../Modals/PopupMenu/PopupMenu";
 
 import "./Header.sass";
 

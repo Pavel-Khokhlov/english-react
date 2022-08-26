@@ -1,14 +1,19 @@
 const path = require('path');
+
 module.exports = {
   mode: 'production',
   devtool: "source-map",
-  entry: './src/index.tsx',
+  entry: path.resolve(__dirname, './src/index.js'),
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
       },
     ],
   },
