@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/english-react/static/css/main.189cdc49.css",
-    "main.js": "/english-react/static/js/main.da79661b.js",
+    "main.css": "/english-react/static/css/main.0dcfd415.css",
+    "main.js": "/english-react/static/js/main.f0a95586.js",
     "static/media/Splash-Regular.ttf": "/english-react/static/media/Splash-Regular.9313a8c93be64cb7914c.ttf",
     "static/media/Festive-Regular.ttf": "/english-react/static/media/Festive-Regular.c49acafb1c564d16d27a.ttf",
     "static/media/Praise-Regular.ttf": "/english-react/static/media/Praise-Regular.c250c7167439a804dda6.ttf",
     "static/media/Roboto-Regular.ttf": "/english-react/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
     "static/media/Anton-Regular.ttf": "/english-react/static/media/Anton-Regular.db746a1872bfcd092bf8.ttf",
     "index.html": "/english-react/index.html",
-    "main.189cdc49.css.map": "/english-react/static/css/main.189cdc49.css.map",
-    "main.da79661b.js.map": "/english-react/static/js/main.da79661b.js.map"
+    "main.0dcfd415.css.map": "/english-react/static/css/main.0dcfd415.css.map",
+    "main.f0a95586.js.map": "/english-react/static/js/main.f0a95586.js.map"
   },
   "entrypoints": [
-    "static/css/main.189cdc49.css",
-    "static/js/main.da79661b.js"
+    "static/css/main.0dcfd415.css",
+    "static/js/main.f0a95586.js"
   ]
 }
