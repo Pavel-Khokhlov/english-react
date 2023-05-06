@@ -73,7 +73,7 @@ export const useFormValidationStore = () => {
     if (n === 'message') {
       if (v.length === 0) return 'Поле должно быть заполнено';
       if (v.length < 30)
-        return 'Сообщение должно быть больше 30 букв';
+        return 'Сообщение должно быть меньше 30 символов';
       return '';
     }
   };

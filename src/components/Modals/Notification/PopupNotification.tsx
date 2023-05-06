@@ -4,7 +4,7 @@ import { useFormStore } from '../../../store/form';
 import { isOpenNotificationState } from '../../../store/globalUI';
 
 import "./PopupNotification.sass";
-import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { useRecoilValue} from 'recoil';
 
 const PopupNotification = () => {
   const {notification, isDelivered} = useFormStore();

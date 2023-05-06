@@ -106,7 +106,7 @@ function FormMessage() {
     handleSetRadio(option);
   };
 
-  const contactLabel =
+  const getContactLabel =
     values.radio === "telegram"
       ? "Имя пользователя телеграм"
       : values.radio === "whatsapp"
@@ -114,6 +114,15 @@ function FormMessage() {
       : values.radio === "phone"
       ? "Номер телефона"
       : "E-mail";
+  
+  const getContactPlaceholder =
+    values.radio === "telegram"
+      ? "@your_telegram"
+      : values.radio === "whatsapp"
+      ? "+7 (999) 999-99-99"
+      : values.radio === "phone"
+      ? "+7 (999) 999-99-99"
+      : "your-email@mail.com";
 
   return (
     <form className="form" onSubmit={(e) => handleFormSubmit(e)}>
@@ -136,13 +145,15 @@ function FormMessage() {
         name="name"
         label="Имя"
         value={values.name || ""}
+        placeholder="Введите ваше имя"
         onChange={handleSetInput}
         error={errors.name || ""}
       />
       <FieldInput
         type="text"
         name="contact"
-        label={contactLabel}
+        label={getContactLabel}
+        placeholder={getContactPlaceholder}
         option={values.radio}
         value={values.contact || ""}
         onChange={handleSetInput}

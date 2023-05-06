@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import FormMessage from "../../FormMessage/FormMessage";
 
 import "./Contacts.sass";

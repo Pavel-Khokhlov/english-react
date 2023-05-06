@@ -21,6 +21,7 @@ interface IFieldInput {
   name?: string;
   option?: string | "telegram" | "whatsapp" | "phone" | "email" | "user";
   value?: string | null;
+  placeholder?: string;
   error?: string;
   onChange: (e: any) => void;
   disabled?: boolean;
@@ -32,6 +33,7 @@ function FieldInput({
   name,
   option = "user",
   value,
+  placeholder,
   error,
   onChange,
   disabled,
@@ -48,22 +50,12 @@ function FieldInput({
 
   const defineInputClass = (): string => {
     let inputClassName = "input__field";
-    if (type === "textarea") {
-      inputClassName += ` input__field_textarea`;
-    } else {
-      inputClassName += ` input__field_other`;
-    }
-    return inputClassName;
+    return type === "textarea" ? inputClassName + ` textarea` : inputClassName;
   };
 
   const defineBorderClass = (): string => {
     let borderClassName = `input__border ${isFocused ? "active" : ""}`;
-    if (type === "textarea") {
-      borderClassName += ` input__border_textarea`;
-    } else {
-      borderClassName += ` input__border_other`;
-    }
-    return borderClassName;
+    return type === "textarea" ? borderClassName + ` textarea` : borderClassName;
   };
 
   const defineInputMode = () => {
@@ -99,6 +91,7 @@ function FieldInput({
                 type={type}
                 name={name}
                 value={value || ""}
+                placeholder={placeholder}
                 inputMode={defineInputMode()}
                 disabled={disabled}
                 className={defineInputClass()}

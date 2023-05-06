@@ -10,7 +10,7 @@ interface ILogo {
 function Logo({onClose}: ILogo) {
   return (
     <NavLink to="/" className="logo" onClick={onClose}>
-      Logo
+      English
     </NavLink>
   );
 }
