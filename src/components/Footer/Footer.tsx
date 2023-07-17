@@ -7,7 +7,6 @@ import "./Footer.sass";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
-  console.log(`APP_VERSION`, app_json.version);
   return (
     <footer className="footer">
       <section className="footer__body">

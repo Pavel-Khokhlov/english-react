@@ -6,43 +6,53 @@
     display: none
     @media screen and (min-width: 1000px)
       display: flex
+
   &__menu
     display: flex
     flex-direction: column
     align-items: center
     gap: 30px
+
   &__footer
     display: flex
     justify-content: center
     gap: 30px
-    margin-bottom: 20px 
+    margin-bottom: 20px
+
     @media screen and (max-width: 1000px)
       flex-direction: column
       align-items: center
       gap: 10px
+
   &__link
     text-decoration: none
     -webkit-tap-highlight-color: transparent
+
     &_header
       font-size: 1.4rem
       font-weight: 500
       color: $secondary-color
       transition: $app-transition
+
       &.active, &:hover
         color: $third-color
+
     &_menu
       font-size: min(24px, 5vw)
       font-weight: 500
       color: $secondary-color
       transition: $app-transition
+
       &.active, &:hover
         color: $third-color
+
     &_footer
-      font-size: 1rem
+      font-size: min(16px, 4vw)
       font-weight: 500
       color: $primary-black
       opacity: 0.4
       transition: $app-transition
+      
       &.active, &:hover
         opacity: 1
   
